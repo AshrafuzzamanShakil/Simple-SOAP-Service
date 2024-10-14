@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Casing Converter</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <script language="JavaScript" src="myAJAXlib.js"></script>
+    <script language="JavaScript" src="myJS.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .input-group {
+            margin: 15px 0;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .button {
+            padding: 10px 15px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #4cae4c;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e7f3fe;
+            border: 1px solid #bcdff1;
+            border-radius: 5px;
+            color: #31708f;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Text Casing Converter</h1>
+    <div id="div1" class="input-group">
+        <label for="t1">Enter text to convert to Upper Case:</label>
+        <input type="text" id="t1" value="">
+        <button class="button" id="b1" onclick="convertNumber();">Convert to Upper Case</button>
+        <input type="text" id="t2" value="" disabled placeholder="Result will appear here">
+    </div>
+    <div id="div2" class="input-group">
+        <label for="t3">Enter text to convert to Lower Case:</label>
+        <input type="text" id="t3" value="">
+        <button class="button" id="b2" onclick="convertPrice();">Convert to Lower Case</button>
+        <input type="text" id="t4" value="" disabled placeholder="Result will appear here">
+    </div>
+    <div id="div3" class="result" style="display: none;"></div>
+</div>
+
+</body>
+</html>
